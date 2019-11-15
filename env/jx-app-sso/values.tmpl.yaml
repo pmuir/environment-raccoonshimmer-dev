@@ -9,7 +9,7 @@ dex:
     google:
       config:
         type: oidc
-        name: Google
+        name: CloudBees
         clientID: "{{ .Parameters.dashboardAuthID }}"
         clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
         issuer: https://cloudbees-development.auth0.com/
