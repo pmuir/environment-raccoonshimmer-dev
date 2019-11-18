@@ -4,8 +4,9 @@ sso-operator:
   dex:
     grpcHost: "dex.jx"
 dex:
-  imageRepo: pmuir/dex
-  tag: wip10
+  image:
+    imageRepo: pmuir/dex
+    tag: wip10
   domain: "dex-jx.{{ $rootDomain }}"
   connectors:
     cloudbees:
