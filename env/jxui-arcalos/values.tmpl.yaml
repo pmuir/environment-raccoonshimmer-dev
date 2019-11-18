@@ -3,7 +3,7 @@
 jxui:
   backendImage:
    imageRepo: pmuir/jxui-backend
-   backendTag: wip70
+   backendTag: wip71
   gcpSA: vault:jx-tenant-service-saas-sa:json
   replicaCount: 2
   skipExposeService: true
