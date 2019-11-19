@@ -4,14 +4,11 @@ sso-operator:
   dex:
     grpcHost: "dex.jx"
 dex:
-  image:
-    imageRepo: pmuir/dex
-    tag: wip10
   domain: "dex-jx.{{ $rootDomain }}"
   connectors:
-    cloudbees:
+    google:
       config:
-        type: cloudbees
+        type: oidc
         name: CloudBees
         clientID: "{{ .Parameters.dashboardAuthID }}"
         clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
