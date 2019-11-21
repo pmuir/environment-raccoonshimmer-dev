@@ -14,7 +14,7 @@ dependencies:
   version: 0.0.23
 - name: jx-tenant-service
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
-  version: 0.0.252
+  version: 0.0.256
 - name: jxboot-resources
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
 - name: jxui-arcalos
