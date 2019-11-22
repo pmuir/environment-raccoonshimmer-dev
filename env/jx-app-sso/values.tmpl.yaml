@@ -1,14 +1,14 @@
 {{- $prefix := printf "%s." .Requirements.cluster.project }}
-{{- $rootDomain := trimPrefix $prefix .Requirements.ingress.domain }}
+  {{- $rootDomain := trimPrefix $prefix .Requirements.ingress.domain }}
 sso-operator:
   dex:
     grpcHost: "dex.jx"
 dex:
   domain: "dex-jx.{{ $rootDomain }}"
   connectors:
-    google:
+    cloudbees:
       config:
-        type: oidc
+        type: cloudbees
         name: CloudBees
         clientID: "{{ .Parameters.dashboardAuthID }}"
         clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
