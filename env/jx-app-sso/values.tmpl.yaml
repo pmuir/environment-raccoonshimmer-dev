@@ -6,9 +6,9 @@ sso-operator:
 dex:
   domain: "dex-jx.{{ $rootDomain }}"
   connectors:
-    cloudbees:
+    google:
       config:
-        type: cloudbees
+        type: oidc
         name: CloudBees
         clientID: "{{ .Parameters.dashboardAuthID }}"
         clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
