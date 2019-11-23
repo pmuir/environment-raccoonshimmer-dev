@@ -1,0 +1,14 @@
+config:
+  clientID: "{{ .Parameters.dashboardAuthID }}"
+  clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
+extraArgs:
+  provider: oidc
+  email-domain: "*"
+  approval-prompt: ""
+  pass-authorization-header: true
+  skip-provider-button: true
+  upstream: "http://jxui:80"
+image:
+  repository: pmuir/oauth2_proxy
+  tag: latest-approval-prompt
+fullnameOverride: oauth2-proxy-jxui

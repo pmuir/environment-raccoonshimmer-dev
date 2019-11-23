@@ -13,13 +13,13 @@ spec:
     http:
       paths:
         - backend:
-            serviceName: sso-jenkins-x-jxui
+            serviceName: oauth2-proxy-jxui
             servicePort: 80
   - host: jxui{{ .Values.cluster.namespaceSubDomain }}{{ .Values.cluster.domain }}
     http:
       paths:
         - backend:
-            serviceName: sso-jenkins-x-jxui
+            serviceName: oauth2-proxy-jxui
             servicePort: 80
 {{- if .Values.cluster.tls }}
   tls:

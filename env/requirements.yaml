@@ -9,9 +9,6 @@ dependencies:
 - name: jx-app-replicator
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
   version: 1.0.14
-- name: jx-app-sso
-  repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
-  version: 0.0.23
 - name: jx-tenant-service
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
   version: 0.0.256
@@ -34,3 +31,6 @@ dependencies:
 - alias: tekton
   name: tekton
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+- name: oauth-proxy2
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 4.0.0
